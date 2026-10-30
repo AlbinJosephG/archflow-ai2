@@ -1,31 +1,31 @@
-# Virtual environments
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
 venv/
 .venv/
 env/
-backend/venv/
 
-# Python cache
-__pycache__/
-*.py[cod]
-*.pyo
-
-# Environment variables / secrets
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
+
+# Frontend
+node_modules/
+dist/
+.vite/
 
 # IDE
 .vscode/
 .idea/
 
-# OS files
+# Generated files
+*.blend1
+*.log
 .DS_Store
-Thumbs.db
 
-# Python build files
-build/
-dist/
-*.egg-info/
-
-# Test / coverage
+# Python testing
+.pytest_cache/
 .coverage
 htmlcov/
-.pytest_cache/
